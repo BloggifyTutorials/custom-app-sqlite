@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/BloggifyTutorials/custom-app-sqlite#readme",
   "blah": {
-    "title": "Bloggify Custom App",
+    "title": "Bloggify Sqlite Custom App",
     "installation_command": {
       "content": [
         "# Clone this repository",
