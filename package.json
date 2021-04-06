@@ -12,7 +12,7 @@
     "start:prod": "BLOGGIFY_LOG_LEVEL=4 bloggify-prod-start --no-workers",
     "start:prod:debug": "NODE_ENV=production node debug `which bloggify` start",
     "start:prod:debug:devtools": "NODE_ENV=production node debug --inspect `which bloggify` start",
-    "postinstall": "obj2env -c 'Enter the SQLITE database file path.' DB_URI=data/db.sqlite3 -i"
+    "postinstall": "obj2env -c 'Enter the SQLITE database file path.' DB_URI=data/db.sqlite3"
   },
   "author": "Bloggify <support@bloggify.org> (https://bloggify.org)",
   "license": "MIT",
