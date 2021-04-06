@@ -11,7 +11,8 @@
     "start:debug": "node debug `which bloggify` start -r",
     "start:prod": "BLOGGIFY_LOG_LEVEL=4 bloggify-prod-start --no-workers",
     "start:prod:debug": "NODE_ENV=production node debug `which bloggify` start",
-    "start:prod:debug:devtools": "NODE_ENV=production node debug --inspect `which bloggify` start"
+    "start:prod:debug:devtools": "NODE_ENV=production node debug --inspect `which bloggify` start",
+    "postinstall": "obj2env -c 'Enter the SQLITE database file path.' DB_URI=data/db.sqlite3 -i"
   },
   "author": "Bloggify <support@bloggify.org> (https://bloggify.org)",
   "license": "MIT",
@@ -44,6 +45,7 @@
     "bloggify-ajs-components": "^1.0.0",
     "bloggify-icons": "^1.0.1",
     "bloggify-sequelize": "^2.1.3",
+    "obj2env-cli": "^1.0.6",
     "sqlite3": "^5.0.0"
   },
   "devDependencies": {
