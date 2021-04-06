@@ -1,0 +1,15 @@
+{
+    "title": "Sqlite Custom Application",
+    "description": "Custom application built with Bloggify.",
+    "domain": "bloggify.org",
+    "db_options": {
+        "autosync": true,
+        "underscored": true
+    },
+    "plugins": [
+        "ajs-components"
+    ],
+    "server": {
+        "session": false
+    }
+}

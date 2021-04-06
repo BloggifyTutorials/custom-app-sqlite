@@ -1,0 +1,31 @@
+@import "bloggify-icons/lib/bloggify-icons.css";
+
+div#container {
+    max-width: 100%;
+    width: 400px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: monospace;
+    font-size: 19px;
+}
+
+div#container {}
+
+body {
+    padding: 10px;
+}
+
+span.icon-bloggify-mark {
+    font-size: 2em;
+}
+
+ol#items-list {
+    text-align: left;
+    padding-left: 60px;
+}

@@ -1,0 +1,52 @@
+{
+  "name": "bloggify-custom-app-template-sqlite",
+  "version": "3.0.0",
+  "description": "A custom application built with @Bloggify.",
+  "main": "bloggify.json",
+  "scripts": {
+    "start": "npm run start:prod",
+    "start:dev": "bloggify-dev-start -r",
+    "bundle": "PORT=8081 NODE_ENV=production bloggify start --exit-after-bundle",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:debug": "node debug `which bloggify` start -r",
+    "start:prod": "BLOGGIFY_LOG_LEVEL=4 bloggify-prod-start --no-workers",
+    "start:prod:debug": "NODE_ENV=production node debug `which bloggify` start",
+    "start:prod:debug:devtools": "NODE_ENV=production node debug --inspect `which bloggify` start"
+  },
+  "author": "Bloggify <support@bloggify.org> (https://bloggify.org)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BloggifyTutorials/custom-app-sqlite/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BloggifyTutorials/custom-app-sqlite.git"
+  },
+  "homepage": "https://github.com/BloggifyTutorials/custom-app-sqlite#readme",
+  "blah": {
+    "title": "Bloggify Custom App",
+    "installation_command": {
+      "content": [
+        "# Clone this repository",
+        "git clone https://github.com/Bloggify/custom-app-sqlite",
+        "",
+        "# Install the dependencies",
+        "cd custom-app-sqlite && npm i",
+        "",
+        "# Start the app in dev mode",
+        "npm run start:dev"
+      ],
+      "language": "bash"
+    }
+  },
+  "dependencies": {
+    "bloggify": "^1.8.1",
+    "bloggify-ajs-components": "^1.0.0",
+    "bloggify-icons": "^1.0.1",
+    "bloggify-sequelize": "^2.1.3",
+    "sqlite3": "^5.0.0"
+  },
+  "devDependencies": {
+    "bloggify-cli": "^1.8.1"
+  }
+}

@@ -1,0 +1,5 @@
+500
+<% var err = typeof error === "undefined" ? null : error %>
+<% if (err && !Bloggify.production) { %>
+    <pre><%= err.stack %></pre>
+<% } %>

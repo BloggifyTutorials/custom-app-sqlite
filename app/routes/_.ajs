@@ -1,0 +1,18 @@
+<% include(Bloggify.partials.header) %>
+
+<div id="container">
+    <form id="create-item">
+        <input name="content">
+        <button>Save</button>
+    </form>
+
+    <ol id="items-list">
+        <% items.forEach(function (item) { %>
+            <li><%= item.content %></li>
+        <% }) %>
+    </ol>
+
+    <span class="icon-bloggify-mark"></span>
+</div>
+
+<% include(Bloggify.partials.footer) %>
