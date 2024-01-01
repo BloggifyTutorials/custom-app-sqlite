@@ -12,6 +12,8 @@
         <% }) %>
     </ol>
 
+    <div>Session ID: <%= ctx.req.session.id %></div>
+
     <span class="icon-bloggify-mark"></span>
 </div>
 

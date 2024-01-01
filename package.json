@@ -8,11 +8,11 @@
     "start:dev": "bloggify-dev-start -r",
     "bundle": "PORT=8081 NODE_ENV=production bloggify start --exit-after-bundle",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:debug": "node debug `which bloggify` start -r",
+    "start:debug": "node inspect `which bloggify` start -r",
     "start:prod": "BLOGGIFY_LOG_LEVEL=4 bloggify-prod-start --no-workers",
-    "start:prod:debug": "NODE_ENV=production node debug `which bloggify` start",
-    "start:prod:debug:devtools": "NODE_ENV=production node debug --inspect `which bloggify` start",
-    "postinstall": "obj2env -c 'Enter the SQLITE database file path.' DB_URI=data/db.sqlite3"
+    "start:prod:debug": "NODE_ENV=production node inspect `which bloggify` start",
+    "start:prod:debug:devtools": "NODE_ENV=production node inspect --inspect `which bloggify` start",
+    "postinstall": "obj2env -c 'Enter the SQLITE database file path.' DB_URI=sqlite://data/db.sqlite3"
   },
   "author": "Bloggify <support@bloggify.org> (https://bloggify.org)",
   "license": "MIT",
@@ -41,14 +41,15 @@
     }
   },
   "dependencies": {
-    "bloggify": "^1.8.1",
+    "bloggify": "^3.0.0",
     "bloggify-ajs-components": "^1.0.0",
     "bloggify-icons": "^1.0.1",
     "bloggify-sequelize": "^2.1.3",
+    "express-session-sqlite": "^2.1.1",
     "obj2env-cli": "^1.0.6",
     "sqlite3": "^5.0.0"
   },
   "devDependencies": {
-    "bloggify-cli": "^1.8.1"
+    "bloggify-cli": "^3.0.0"
   }
 }
