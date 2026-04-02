@@ -1,3 +1,0 @@
-        <% mod("bloggify-ajs-components/lib/footer") %>
-    </body>
-</html>

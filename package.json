@@ -3,6 +3,7 @@
   "version": "3.0.0",
   "description": "A custom application built with @Bloggify.",
   "main": "bloggify.json",
+  "type": "module",
   "scripts": {
     "start": "npm run start:prod",
     "start:dev": "bloggify-dev-start -r",

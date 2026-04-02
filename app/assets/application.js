@@ -1,4 +1,6 @@
-const Actions = require("bloggify/actions")
+import { post, get } from "bloggify/lib/client/actions.js"
+import "./application.css";
+
 
 // Handle submit
 document.querySelector("#create-item").addEventListener("submit", async e => {
@@ -8,10 +10,12 @@ document.querySelector("#create-item").addEventListener("submit", async e => {
     const data = {
         content: document.querySelector("[name='content']").value
     }
-    await Actions.post("items.create", data)
+
+    await post("items.create", data)
 
     // Append the last item
-    const last = (await Actions.get("items.list")).pop()
+    const { items } = (await get("items.list"))
+    const last = (items || []).pop();
     const $li = document.createElement("li")
     $li.textContent = last.content
     document.getElementById("items-list").appendChild($li)
