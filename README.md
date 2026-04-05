@@ -45,18 +45,9 @@
 
 
 
-## :cloud: Installation
 
-```bash
-# Clone this repository
-git clone https://github.com/Bloggify/custom-app-sqlite
 
-# Install the dependencies
-cd custom-app-sqlite && npm i
 
-# Start the app in dev mode
-npm run start:dev
-```
 
 
 
@@ -87,8 +78,6 @@ There are few ways to get help:
 
  1. Please [post questions on Stack Overflow](https://stackoverflow.com/questions/ask). You can open issues with questions, as long you add a link to your Stack Overflow question.
  2. For bug reports and feature requests, open issues. :bug:
-
-
 
 
 
